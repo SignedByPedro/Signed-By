@@ -4,21 +4,109 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Signed By Pedro</title>
+    <link rel="stylesheet" href="./Styles.css" />
   </head>
   <body>
     <header>
       <h1>Let's Order Something!</h1>
       <br />
-      <img src="../Images/Main/Sticker-Original.webp" alt="300" />
+      <img
+        src="../Images/Main/Sticker-Original.webp"
+        alt="Logo Sticker"
+        width="300"
+      />
     </header>
     <main>
-      <form action="">
-        <label for="fname">First Name:</label>
-        <input type="text" id="fname" name="fname" />
-        <br />
-        <br />
-        <label for="lname">Last Name:</label>
-        <input type="text" id="lname" name="lname" />
+      <h1>Custom Order Form</h1>
+      <form action="submit_order.php" method="post">
+        <label for="first_name">First Name:</label>
+        <input
+          type="text"
+          id="first_name"
+          name="first_name"
+          required
+        /><br /><br />
+
+        <label for="last_name">Last Name:</label>
+        <input
+          type="text"
+          id="last_name"
+          name="last_name"
+          required
+        /><br /><br />
+
+        <label for="product_type">Choose a Product:</label>
+        <select id="product_type" name="product_type" required>
+          <option value="rug">Rug</option>
+          <option value="canvas">Canvas</option>
+          <option value="custom_work">Other Custom Work</option></select
+        ><br /><br />
+
+        <label for="design_image">Upload Design Image:</label>
+        <input
+          type="file"
+          id="design_image"
+          name="design_image"
+          accept="image/*"
+          required
+        /><br /><br />
+
+        <label for="size">Select Size:</label>
+        <select id="size" name="size" required>
+          <option value="mini">Mini</option>
+          <option value="small">Small</option>
+          <option value="medium">Medium</option>
+          <option value="large">Large</option>
+          <option value="giant">Giant</option></select
+        ><br /><br />
+
+        <label for="color_preference">Color Preference:</label>
+        <input
+          type="radio"
+          id="true_to_color"
+          name="color_preference"
+          value="true_to_color"
+          required
+        />
+        <label for="true_to_color">True to Color</label>
+        <input
+          type="radio"
+          id="monochromatic"
+          name="color_preference"
+          value="monochromatic"
+          required
+        />
+        <label for="monochromatic">Monochromatic</label>
+        <input
+          type="radio"
+          id="black_and_white"
+          name="color_preference"
+          value="black_and_white"
+          required
+        />
+        <label for="black_and_white">Black and White</label><br /><br />
+
+        <label for="contact_method">Choose Contact Method:</label>
+        <input
+          type="radio"
+          id="email"
+          name="contact_method"
+          value="email"
+          required
+        />
+        <label for="email">Email</label>
+        <input
+          type="radio"
+          id="instagram"
+          name="contact_method"
+          value="instagram"
+          required
+        />
+        <label for="instagram">Instagram Direct</label><br /><br />
+        <label for="Contact">Tell us your Instagram or Email</label>
+        <input type="text" id="Contact" name="Contact" required /><br /><br />
+
+        <input type="submit" value="Submit Order" />
       </form>
     </main>
   </body>
