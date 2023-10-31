@@ -1,0 +1,85 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.barup,
+.bardown {
+  background-color: rgba(91, 118, 96, 0.5);
+  padding: 20px 0;
+  margin: 0;
+  height: 100px;
+}
+
+.bardown {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+  font-family: "Cooper Black", sans-serif;
+  color: #fff0db;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+}
+.menu {
+  display: flex;
+  padding: 30px 100px;
+  align-items: center;
+}
+.menu a {
+  text-decoration: none;
+  font-size: 42px;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  color: inherit;
+}
+.logo {
+  margin-left: 10px;
+}
+.inv {
+  margin-right: 10px;
+}
+.Sticker {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 2;
+}
+.SecondaryFont {
+  font-family: "OldNewspaperTypes", sans-serif;
+  font-size: 40px;
+}
+.textmain {
+  margin-top: 200px;
+  margin-left: 200px;
+  color: #fff0db;
+}
+.menu {
+  text-decoration: none;
+  border: none;
+}
+footer {
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+}
+.contacts {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.contacts a {
+  margin-right: 50px;
+}
