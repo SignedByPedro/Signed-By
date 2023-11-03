@@ -1,6 +1,19 @@
-@import url("https://fonts.cdnfonts.com/css/cooper-black");
-@import url("https://fonts.cdnfonts.com/css/oldnewspapertypes");
+@font-face {
+  font-family: cooper black;
+  font-style: normal;
+  font-weight: 400;
+  src: local("Cooper Black"),
+    url(https://fonts.cdnfonts.com/s/14988/COOPBL.woff) format("woff");
+}
 
+@font-face {
+  font-family: oldnewspapertypes;
+  font-style: normal;
+  font-weight: 500;
+  src: local("OldNewspaperTypes"),
+    url(https://fonts.cdnfonts.com/s/15198/OldNewspaperTypes.woff)
+      format("woff");
+}
 body,
 html {
   margin: 0;
