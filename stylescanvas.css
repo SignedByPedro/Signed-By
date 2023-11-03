@@ -4,16 +4,13 @@ html {
   padding: 0;
   height: 100%;
 }
-.MainPage {
-  background-image: url(./Images/Main/Background.webp);
+
+body {
+  background-image: url(../Images/Canvas/website\ Canvas\ Background.webp);
   background-size: cover;
   background-repeat: no-repeat;
 }
-.CanvasPage {
-  background-image: url(./Images/Canvas/website\ Canvas\ Background.webp);
-  background-size: cover;
-  background-repeat: no-repeat;
-}
+
 .barup,
 .bardown {
   background-color: rgba(91, 118, 96, 0.5);
