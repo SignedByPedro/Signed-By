@@ -1,3 +1,20 @@
+@font-face {
+  font-family: cooper black;
+  font-style: normal;
+  font-weight: 400;
+  src: local("Cooper Black"),
+    url(https://fonts.cdnfonts.com/s/14988/COOPBL.woff) format("woff");
+}
+
+@font-face {
+  font-family: oldnewspapertypes;
+  font-style: normal;
+  font-weight: 500;
+  src: local("OldNewspaperTypes"),
+    url(https://fonts.cdnfonts.com/s/15198/OldNewspaperTypes.woff)
+      format("woff");
+}
+
 body,
 html {
   margin: 0;
@@ -5,8 +22,14 @@ html {
   height: 100%;
 }
 
-body {
-  background-image: url(../Images/Canvas/website\ Canvas\ Background.webp);
+.MainPage {
+  background-image: url(./Images/Main/Background.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.CanvasPage {
+  background-image: url(./Images/Canvas/website\ Canvas\ Background.webp);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -14,9 +37,9 @@ body {
 .barup,
 .bardown {
   background-color: rgba(91, 118, 96, 0.5);
-  padding: 20px 0;
+  padding: 2% 0;
   margin: 0;
-  height: 100px;
+  height: 10%;
 }
 
 .bardown {
@@ -24,68 +47,95 @@ body {
   bottom: 0;
   width: 100%;
 }
+
 header {
   display: flex;
   align-items: center;
   justify-content: center;
   justify-content: space-between;
-  font-family: "Cooper Black", sans-serif;
-  color: #fff0db;
 }
+
 .container {
   display: flex;
   justify-content: center;
   justify-content: space-between;
 }
+
 .menu {
   display: flex;
-  padding: 30px 100px;
+  padding: 2% 10%;
   align-items: center;
 }
+
 .menu a {
   text-decoration: none;
-  font-size: 42px;
+  font-size: 250%;
   background: none;
   border: none;
   padding: 0;
-  cursor: pointer;
-  color: inherit;
+  font-family: "Cooper Black", sans-serif;
+  color: #fff0db;
 }
+
 .logo {
-  margin-left: 10px;
+  margin-left: 1%;
 }
+
 .inv {
-  margin-right: 10px;
+  margin-right: 1%;
 }
+
 .Sticker {
   position: absolute;
   bottom: 0;
   right: 0;
   z-index: 2;
 }
+
 .SecondaryFont {
   font-family: "OldNewspaperTypes", sans-serif;
-  font-size: 40px;
+  font-size: 2%;
 }
+
 .textmain {
-  margin-top: 200px;
-  margin-left: 200px;
+  margin-top: 10%;
+  margin-left: 10%;
   color: #fff0db;
 }
+
 .menu {
   text-decoration: none;
   border: none;
 }
+
 footer {
   position: absolute;
-  bottom: 30px;
-  left: 30px;
+  bottom: 3%;
+  left: 3%;
 }
+
 .contacts {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
 .contacts a {
-  margin-right: 50px;
+  margin-right: 5%;
+}
+
+.HowTo {
+  position: absolute;
+  bottom: 5%;
+  right: 10%;
+}
+
+.HowTo a {
+  text-decoration: none;
+  font-size: 2.5%;
+  background: none;
+  border: none;
+  padding: 0;
+  font-family: "Cooper Black", sans-serif;
+  color: #fff0db;
 }
